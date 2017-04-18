@@ -24,5 +24,17 @@ body{
   margin-left: 0.5em;
 }
 .sizes{
+  margin-left: 2em;
+}
+.colors{
+  margin-left: 0.9em;
+}
+.brands{
+  margin-left: 0.6em;
+}
+.prices{
+  margin-left: 1em;
+}
+.stocks{
   margin-left: 0.8em;
 }
