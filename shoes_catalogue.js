@@ -128,7 +128,6 @@ add.addEventListener('click', function() {
     shoesing.in_stock += Number(in_stock.value);
 }
 
-shoesDataList.push(shoesing);
 });
     //displayData(shoesDataList);
 function displayData(shoesDataList) {
@@ -151,7 +150,7 @@ colorDisplay.addEventListener('change', function(evt) {
 
   for (var i = 0; i < shoesDataList.length; i++) {
     console.log(shoesDataList[i].color);
-    if (evt.target.value === shoesDataList[i].color) {
+    if (evt.target.value === shoesDataList[i].color || evt.target.value === shoesDataList[i].size ) {
       pushFilter.push(shoesDataList[i]);
     }
   }
@@ -161,6 +160,7 @@ colorDisplay.addEventListener('change', function(evt) {
     shoes: pushFilter
   });
 });
+
 show.addEventListener('click', function() {
       displayData(shoesDataList);
     });
